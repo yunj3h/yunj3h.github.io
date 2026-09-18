@@ -1,4 +1,4 @@
 title: "on this day"
 description: "매년 오늘을 기록"
 markdown: kramdown
-permalink: /:year/:month/:day/:title/
+permalink: /:year/:month/:day/:hour/:minute/:second/
