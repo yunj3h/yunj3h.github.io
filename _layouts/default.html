@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-    <header>
-        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+    <header class="box-header">
+        <h1>{{ site.title }} (Header 영역)</h1>
     </header>
 
-    <main>
+    <main class="box-main">
         {{ content }}
     </main>
 
-    <footer>
-        <p>&copy; {{ site.time | date: "%Y" }} My Diary Blog</p>
+    <footer class="box-footer">
+        <p>&copy; {{ site.time | date: "%Y" }} Footer 영역</p>
     </footer>
 </body>
 </html>
