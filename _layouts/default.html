@@ -6,16 +6,23 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-    <header class="box-header">
-        <h1>{{ site.title }} (Header 영역)</h1>
-    </header>
+    <div class="diary-container">
+        <!-- 날짜 네비게이션 헤더 -->
+        <header class="diary-header">
+            <!-- 추후 이전/다음 날짜 이동 기능 확장 가능 영역 -->
+            <button class="nav-btn" title="이전 날짜">◀</button>
+            <h1 class="current-date">{{ site.time | date: "%Y년 %m월 %d일" }}</h1>
+            <button class="nav-btn" title="다음 날짜">▶</button>
+        </header>
 
-    <main class="box-main">
-        {{ content }}
-    </main>
+        <!-- 메인 다이어리 피드 영역 -->
+        <main class="diary-main">
+            {{ content }}
+        </main>
 
-    <footer class="box-footer">
-        <p>&copy; {{ site.time | date: "%Y" }} Footer 영역</p>
-    </footer>
+        <footer class="diary-footer">
+            <p>&copy; {{ site.time | date: "%Y" }} My Diary</p>
+        </footer>
+    </div>
 </body>
 </html>
