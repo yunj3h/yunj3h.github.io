@@ -1,8 +1,6 @@
 ---
-# Jekyll이 SCSS로 인식하도록 하는 빈 프런트 매터
 ---
 
-// 변수 선언
 $primary-color: #007acc;
 $text-color: #333;
 
@@ -14,11 +12,14 @@ body {
   line-height: 1.6;
   color: $text-color;
 
-  header {
-    h1 a {
-      text-decoration: none;
-      color: #111;
-    }
+  header h1 a {
+    text-decoration: none;
+    color: #111;
+  }
+
+  .diary-list {
+    list-style: none;
+    padding: 0;
   }
 
   .diary-item {
@@ -31,5 +32,13 @@ body {
       color: $primary-color;
       margin-right: 8px;
     }
+  }
+
+  footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #777;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
   }
 }
