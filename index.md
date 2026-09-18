@@ -5,7 +5,6 @@ title: "오늘의 기록"
 
 {% assign current_month = site.time | date: "%m" %}
 {% assign current_day = site.time | date: "%d" %}
-
 {% assign found_posts = "" | split: "" %}
 
 <!-- 1. 오늘 날짜(월/일)와 일치하는 포스트들만 골라냅니다 -->
